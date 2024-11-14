@@ -14,11 +14,13 @@ body {
   background-color: #fdfdff;
 }
 
-[class*="__section"] {
+[class*="__container"] {
   max-width: 1630px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
+
 
 /* ----- services ----- */
 
@@ -184,6 +186,7 @@ body {
   display: flex;
   flex-direction: column;
   order: 2;
+  width: 100%;
   max-width: 622px;
 }
 
@@ -197,29 +200,45 @@ body {
   color: #161c2d;
   max-width: 404px;
   margin-bottom: 110px;
+  opacity: 0.7;
 }
 
 .listen-block-desc {}
 
 .listen-desc-list {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 33px;
-  max-width: 296px;
 }
 
 .listen-desc-item {
   display: flex;
   gap: 14px;
+  max-width: 295px;
 }
 
 .listen-desc-img {}
 
 .listen-desc-text-box {}
 
-.listen-desc-box-title {}
+.listen-desc-box-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 1.52381;
+  letter-spacing: -0.02em;
+  color: #161c2d;
+}
 
-.listen-desc-box-text {}
+.listen-desc-box-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.70588;
+  letter-spacing: -0.01em;
+  color: #161c2d;
+  opacity: 0.7;
+}
 
 .listen-img-box {
   display: flex;
@@ -227,3 +246,77 @@ body {
 }
 
 .listen-img {}
+
+/* ----- comfortable ----- */
+
+
+.comfortable {
+  background: #473bf0;
+}
+
+.comfortable-container {
+  display: flex;
+  align-items: center;
+  column-gap: 244px;
+  justify-content: end;
+  /* flex-wrap: wrap; */
+}
+
+.comfortable-block {
+  max-width: 421px;
+  ;
+}
+
+.comfortable-block-titile {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.20833;
+  letter-spacing: -0.04em;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.comfortable-block-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 1.68421;
+  letter-spacing: -0.01em;
+  color: #fff;
+  opacity: 0.65;
+  margin-bottom: 90px;
+}
+
+.comfortable-block-desc {
+  display: flex;
+  align-items: start;
+  gap: 22px;
+}
+
+.comfortable-desc-img {}
+
+.comfortable-desc-texts {}
+
+.comfortable-desc-text-one {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 1.52381;
+  letter-spacing: -0.01em;
+  color: #fff;
+}
+
+.comfortable-desc-text-two {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.73333;
+  letter-spacing: -0.01em;
+  color: #fff;
+  opacity: 0.65;
+}
+
+.comfortable-img-box {}
+
+.comfortable-img {}
