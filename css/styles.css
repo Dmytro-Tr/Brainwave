@@ -16,6 +16,8 @@ body {
 
 [class*="__section"] {
   max-width: 1630px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* ----- services ----- */
@@ -52,6 +54,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .header-logo {
@@ -90,7 +93,7 @@ body {
 /* ----- hero ----- */
 
 .hero {
-  padding: 124px 0 150px 0;
+  padding: 124px 0 75px 0;
 }
 
 .hero__section {}
@@ -101,6 +104,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 .hero-img {
@@ -160,3 +164,66 @@ body {
 .hero-button-link:hover {
   text-decoration: underline;
 }
+
+/* ----- listen ----- */
+
+.listen {
+  margin: 75px 0;
+  background-color: #f4f7fa;
+}
+
+.listen-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 125px;
+  row-gap: 30px;
+  align-items: center;
+}
+
+.listen-block {
+  display: flex;
+  flex-direction: column;
+  order: 2;
+  max-width: 622px;
+}
+
+.listen-block-titile {
+  color: #161c2d;
+  margin-bottom: 20px;
+  max-width: 429px;
+}
+
+.listen-block-text {
+  color: #161c2d;
+  max-width: 404px;
+  margin-bottom: 110px;
+}
+
+.listen-block-desc {}
+
+.listen-desc-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+  max-width: 296px;
+}
+
+.listen-desc-item {
+  display: flex;
+  gap: 14px;
+}
+
+.listen-desc-img {}
+
+.listen-desc-text-box {}
+
+.listen-desc-box-title {}
+
+.listen-desc-box-text {}
+
+.listen-img-box {
+  display: flex;
+  order: 1;
+}
+
+.listen-img {}
