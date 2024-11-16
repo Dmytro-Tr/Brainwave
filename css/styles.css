@@ -16,9 +16,26 @@ body {
 
 [class*="__container"] {
   max-width: 1630px;
-  /* padding-left: 15px;
-  padding-right: 15px; */
   margin: 0 auto;
+}
+
+.visually-hidden {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  color: #2e2f42;
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 
@@ -48,7 +65,6 @@ body {
 }
 
 /* ----- header ----- */
-.header {}
 
 .header-container {
   max-width: 1561px;
@@ -67,14 +83,10 @@ body {
   color: #161c2d;
 }
 
-.header-nav {}
-
 .header-nav-list {
   display: flex;
   gap: 44px;
 }
-
-.header-nav-item {}
 
 .header-nav-link {
   font-weight: 700;
@@ -97,8 +109,6 @@ body {
 .hero {
   padding: 124px 0 150px 0;
 }
-
-.hero__section {}
 
 .hero-container {
   max-width: 773px;
@@ -137,8 +147,6 @@ body {
 }
 
 .hero-block-text {
-  font-family: "Gilroy", sans-serif;
-  font-weight: 400;
   font-size: 19px;
   line-height: 1.68421;
   letter-spacing: -0.01em;
@@ -202,8 +210,6 @@ body {
   opacity: 0.7;
 }
 
-.listen-block-desc {}
-
 .listen-desc-list {
   display: flex;
   /* flex-wrap: wrap; */
@@ -216,12 +222,7 @@ body {
   max-width: 295px;
 }
 
-.listen-desc-img {}
-
-.listen-desc-text-box {}
-
 .listen-desc-box-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 1.52381;
@@ -230,8 +231,6 @@ body {
 }
 
 .listen-desc-box-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 17px;
   line-height: 1.70588;
   letter-spacing: -0.01em;
@@ -244,10 +243,7 @@ body {
   order: 1;
 }
 
-.listen-img {}
-
 /* ----- comfortable ----- */
-
 
 .comfortable {
   background: #473bf0;
@@ -258,7 +254,6 @@ body {
   align-items: center;
   column-gap: 244px;
   justify-content: end;
-  /* flex-wrap: wrap; */
 }
 
 .comfortable-block {
@@ -267,7 +262,6 @@ body {
 }
 
 .comfortable-block-titile {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.20833;
@@ -277,8 +271,6 @@ body {
 }
 
 .comfortable-block-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 19px;
   line-height: 1.68421;
   letter-spacing: -0.01em;
@@ -293,10 +285,6 @@ body {
   gap: 22px;
 }
 
-.comfortable-desc-img {}
-
-.comfortable-desc-texts {}
-
 .comfortable-desc-text-one {
   font-family: "Rubik", sans-serif;
   font-weight: 400;
@@ -307,7 +295,6 @@ body {
 }
 
 .comfortable-desc-text-two {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 15px;
   line-height: 1.73333;
@@ -315,10 +302,6 @@ body {
   color: #fff;
   opacity: 0.65;
 }
-
-.comfortable-img-box {}
-
-.comfortable-img {}
 
 /* ----- trendy ----- */
 
@@ -342,7 +325,6 @@ body {
 }
 
 .trendy-block-titile {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 1.20833;
@@ -354,8 +336,6 @@ body {
 }
 
 .trendy-block-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 19px;
   line-height: 1.68421;
   letter-spacing: -0.01em;
@@ -370,7 +350,6 @@ body {
 }
 
 /* ----- getyour ----- */
-
 
 .getyour {
   margin: 130px auto 158px auto;
@@ -398,15 +377,12 @@ body {
 }
 
 .getyour-block-text {
-  font-weight: 400;
   font-size: 19px;
   line-height: 1.68421;
   letter-spacing: -0.01em;
   text-align: center;
   color: #161c2d;
 }
-
-.getyour-content {}
 
 .getyour-content-list {
   display: flex;
@@ -418,7 +394,6 @@ body {
 }
 
 .getyour-content-title {
-  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 1.52381;
@@ -429,8 +404,6 @@ body {
 }
 
 .getyour-content-text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
   font-size: 17px;
   line-height: 1.70588;
   letter-spacing: -0.01em;
@@ -454,4 +427,44 @@ body {
 
 .getyour-content-img-pink {
   padding-top: 13px;
+}
+
+/* ----- ctaimage ----- */
+
+.ctaimage-image {
+  width: 100%;
+}
+
+/* ----- footer ----- */
+
+.footer-container {
+  max-width: 1142px;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: -0.01em;
+  color: #161c2d;
+  padding-top: 44px;
+  padding-bottom: 44px;
+}
+
+.footer-nav-list {
+  display: flex;
+  gap: 42px;
+}
+
+.footer-nav-link {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.73333;
+  letter-spacing: -0.01em;
+  text-align: right;
+  color: #161c2d;
 }
