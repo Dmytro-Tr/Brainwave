@@ -59,9 +59,15 @@ body {
 .services-header-button {
   text-align: center;
   color: #fff;
-
   border-radius: 8px;
   background-color: #473bf0;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.services-header-button:hover,
+.services-header-button:active {
+  background-color: #ffdada;
+  color: #005348;
 }
 
 /* ----- header ----- */
@@ -83,6 +89,10 @@ body {
   color: #161c2d;
 }
 
+.header-logo:hover {
+  color: #005348;
+}
+
 .header-nav-list {
   display: flex;
   gap: 44px;
@@ -95,6 +105,12 @@ body {
   letter-spacing: -0.01em;
   text-align: center;
   color: #161c2d;
+  transition: color 250ms ease-in-out;
+}
+
+.header-nav-link:hover {
+  color: #005348;
+  text-decoration: underline;
 }
 
 .header-button {
@@ -173,6 +189,7 @@ body {
 
 .hero-button-link:hover {
   text-decoration: underline;
+  color: #005348;
 }
 
 /* ----- listen ----- */
@@ -453,6 +470,11 @@ body {
   color: #161c2d;
   padding-top: 44px;
   padding-bottom: 44px;
+  transition: color 250ms ease-in-out;
+}
+
+.footer-logo:hover {
+  color: #005348;
 }
 
 .footer-nav-list {
@@ -467,4 +489,10 @@ body {
   letter-spacing: -0.01em;
   text-align: right;
   color: #161c2d;
+  transition: color 250ms ease-in-out;
+}
+
+.footer-nav-link:hover {
+  text-decoration: underline;
+  color: #005348;
 }
