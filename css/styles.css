@@ -61,13 +61,17 @@ body {
   color: #fff;
   border-radius: 8px;
   background-color: #473bf0;
-  transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
+  border: 2px solid #473bf0;
+  box-shadow: none;
+  transition: background-color 250ms ease-in-out, color 250ms ease-in-out, border 250ms ease-in-out, box-shadow 250ms ease-in-out;
 }
 
 .services-header-button:hover,
 .services-header-button:active {
-  background-color: #ffdada;
+  background-color: inherit;
+  border: 2px solid #473bf0;
   color: #005348;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* ----- header ----- */
